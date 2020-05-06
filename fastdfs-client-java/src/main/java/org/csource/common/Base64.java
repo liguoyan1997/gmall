@@ -53,7 +53,7 @@ import java.io.IOException;
  * Futures Streams or files.
  */
 
-public class  Base64 {
+public class Base64 {
 
   /**
    * Marker value for chars we just ignore, e.g. \n \r high ascii
