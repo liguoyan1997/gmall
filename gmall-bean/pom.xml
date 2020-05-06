@@ -12,7 +12,7 @@
 
     <artifactId>gmall-bean</artifactId>
 
-    <!--导入通用mapper依赖-->
+    <!--导入通用mapper依赖 -->
     <dependencies>
         <dependency>
             <groupId>tk.mybatis</groupId>
