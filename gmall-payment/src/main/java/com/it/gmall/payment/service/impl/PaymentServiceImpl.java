@@ -206,7 +206,7 @@ public class PaymentServiceImpl implements PaymentService {
             mapMessage.setString("outTradeNo",outTradeNo);
             mapMessage.setInt("delaySec",delaySec);
             mapMessage.setInt("checkCount",checkCount);
-            // 设置延迟队列开启 延迟多少秒
+            // 设置延迟队列开启 延迟多少时间
             mapMessage.setLongProperty(ScheduledMessage.AMQ_SCHEDULED_DELAY,delaySec*1000);
             producer.send(mapMessage);
             session.commit();

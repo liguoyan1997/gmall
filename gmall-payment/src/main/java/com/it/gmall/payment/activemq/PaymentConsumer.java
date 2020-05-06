@@ -9,7 +9,6 @@ import org.springframework.stereotype.Component;
 import javax.jms.JMSException;
 import javax.jms.MapMessage;
 
-/*延迟队列*/
 @Component
 public class PaymentConsumer {
 

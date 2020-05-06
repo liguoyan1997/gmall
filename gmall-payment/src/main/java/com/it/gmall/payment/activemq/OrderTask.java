@@ -19,11 +19,11 @@ public class OrderTask {
     private OrderService orderService;
 
     // 5 每分钟的第五秒
+// 0/5 没隔五秒执行一次
     @Scheduled(cron = "5 * * * * ?")
     public void  work(){
         System.out.println("Thread ====== "+ Thread.currentThread());
     }
-    /*0/5 没隔五秒执行一次*/
     @Scheduled(cron = "0/5 * * * * ?")
     public void  work1(){
         System.out.println("Thread1 ====== "+ Thread.currentThread());

@@ -1,5 +1,6 @@
 package com.it.gmall.payment.activemq;
 
+import org.apache.activemq.ActiveMQConnection;
 import org.apache.activemq.ActiveMQConnectionFactory;
 import org.apache.activemq.command.ActiveMQTextMessage;
 
@@ -15,8 +16,8 @@ public class ProducerTest {
     * 5.创建队列
     * 6.创建消息提供者
     * 7.创建消息对象
-     * 8.发送消息
-     * 8_1.当异步时 要提交
+    * 7_1.当异步时 要提交
+    * 8.发送消息
     * 9.关闭
     * */
     public static void main(String[] args) throws JMSException {
@@ -39,10 +40,6 @@ public class ProducerTest {
 
         /*开启事务时*/
         session.commit();
-        closeMQ(connection, session, producer);
-    }
-
-    private static void closeMQ(Connection connection, Session session, MessageProducer producer) throws JMSException {
         producer.close();
         session.close();
         connection.close();

@@ -1,6 +1,7 @@
 package com.it.gmall.payment;
 
 import com.it.gmall.config.ActiveMQUtil;
+import org.apache.activemq.ActiveMQConnectionFactory;
 import org.apache.activemq.command.ActiveMQTextMessage;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -39,8 +40,6 @@ public class GmallPaymentApplicationTests {
         /*创建消息对象*/
         ActiveMQTextMessage activeMQTextMessage = new ActiveMQTextMessage();
         activeMQTextMessage.setText("太烦了......");
-        /*设置持久化*/
-        producer.setDeliveryMode(DeliveryMode.PERSISTENT);
         producer.send(activeMQTextMessage);
 
         /*开启事务时*/
