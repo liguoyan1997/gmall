@@ -1,0 +1,6 @@
+com\it\service\CartService.class
+com\it\service\UserInfoServive.class
+com\it\service\ManagerService.class
+com\it\service\OrderService.class
+com\it\service\ListService.class
+com\it\service\PaymentService.class
