@@ -8,6 +8,7 @@
         <version>1.0-SNAPSHOT</version>
         <relativePath>../gmall-parent/pom.xml</relativePath>
     </parent>
+
     <artifactId>gmall-passport-web</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>gmall-passport-web</name>
