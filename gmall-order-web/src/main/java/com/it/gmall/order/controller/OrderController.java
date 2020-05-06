@@ -10,11 +10,9 @@ import com.it.service.OrderService;
 import com.it.service.UserInfoServive;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
-import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -42,7 +40,7 @@ public class OrderController {
     public String order(HttpServletRequest request){
         /*收货地址显示*/
         String userId = (String) request.getAttribute("userId");
-        UserAddress userAddress =  new UserAddress();
+        UserAddress userAddress = new UserAddress();
         userAddress.setUserId(userId);
         List<UserAddress> userAddressList = userInfoServive.getUserAdddressById(userAddress);
         request.setAttribute("userAddressList",userAddressList);
@@ -120,6 +118,11 @@ public class OrderController {
         return "redirect://payment.gmall.com/index?orderId="+orderId;
     }
 
+    /**
+     * 拆单
+     * @param request
+     * @return
+     */
     @RequestMapping("orderSplit")
     @ResponseBody
     public String orderSplit(HttpServletRequest request){

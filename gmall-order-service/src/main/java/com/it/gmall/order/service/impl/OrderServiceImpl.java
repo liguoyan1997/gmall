@@ -167,7 +167,6 @@ public class OrderServiceImpl implements OrderService {
         } catch (JMSException e) {
             e.printStackTrace();
         }
-
     }
 
     @Override
