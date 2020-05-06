@@ -12,6 +12,7 @@
 
     <artifactId>gmall-interface</artifactId>
 
+
     <dependencies>
         <!--导入bean实体类组件-->
         <dependency>
