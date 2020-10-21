@@ -2,9 +2,7 @@ package com.it.bean;
 
 import lombok.Data;
 
-import javax.persistence.Column;
-import javax.persistence.Id;
-import javax.persistence.Transient;
+import javax.persistence.*;
 import java.io.Serializable;
 
 /**
@@ -14,6 +12,7 @@ import java.io.Serializable;
 public class BaseAttrValue implements Serializable {
     @Id
     @Column
+    @GeneratedValue(strategy = GenerationType.IDENTITY)  //获取表主键自增
     private String id;
     @Column
     private String valueName;
