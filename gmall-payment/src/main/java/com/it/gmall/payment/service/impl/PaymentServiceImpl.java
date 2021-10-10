@@ -75,7 +75,8 @@ public class PaymentServiceImpl implements PaymentService {
         AlipayTradeRefundRequest request = new AlipayTradeRefundRequest();
         HashMap<String, Object> map = new HashMap<>();
         map.put("out_trade_no",orderInfo.getOutTradeNo());
-        map.put("refund_amount", orderInfo.getTotalAmount());
+        /*map.put("refund_amount", orderInfo.getTotalAmount());*/
+        map.put("refund_amount", 0.01);
         map.put("refund_reason","哥不买了......");
         request.setBizContent(JSON.toJSONString(map));
         /*request.setBizContent("{" +

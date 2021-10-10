@@ -95,7 +95,8 @@ public class PaymentController {
         map.put("out_trade_no",paymentInfo.getOutTradeNo());
         map.put("product_code","FAST_INSTANT_TRADE_PAY");
         map.put("subject",paymentInfo.getSubject());
-        map.put("total_amount",paymentInfo.getTotalAmount());
+        /*map.put("total_amount",paymentInfo.getTotalAmount());*/
+        map.put("total_amount",0.01);
         /*把封装好的参数  传递给支付宝*/
         alipayRequest.setBizContent(JSON.toJSONString(map));
         /*alipayRequest.setBizContent( "{"  +

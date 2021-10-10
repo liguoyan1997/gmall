@@ -38,9 +38,9 @@
         </dependency>
         <!--支付报sdk-->
         <dependency>
-            <groupId>com.alipay</groupId>
-            <artifactId>alipay-sdk</artifactId>
-            <version>3.0.0</version>
+            <groupId>com.alipay.sdk</groupId>
+            <artifactId>alipay-sdk-java</artifactId>
+            <version>4.9.28.ALL</version>
         </dependency>
     </dependencies>
 

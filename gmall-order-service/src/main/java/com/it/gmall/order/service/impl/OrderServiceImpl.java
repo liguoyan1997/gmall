@@ -118,12 +118,13 @@ public class OrderServiceImpl implements OrderService {
     // 验证库存
     @Override
     public boolean checkStock(String skuId,Integer skuNum){
-        String result = HttpClientUtil.doGet("http://www.gware.com/hasStock?skuId=" + skuId + "&num=" + skuNum);
+        /*String result = HttpClientUtil.doGet("http://www.gware.com/hasStock?skuId=" + skuId + "&num=" + skuNum);
         if ("1".equals(result)){
             return  true;
         }else {
             return  false;
-        }
+        }*/
+        return true;
     }
 
     @Override
