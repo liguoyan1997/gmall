@@ -5,7 +5,7 @@ FastDFS Java Client API may be copied only under the terms of the BSD license.
 
 ## 使用ant从源码构建
 
-```
+``` 
 ant clean package
 ```
 

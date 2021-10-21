@@ -29,6 +29,8 @@
     <orderEntry type="module" module-name="fastdfs-client-java" />
     <orderEntry type="module" module-name="fastdfs-client-java" />
     <orderEntry type="module" module-name="fastdfs-client-java" />
+    <orderEntry type="module" module-name="fastdfs-client-java" />
+    <orderEntry type="module" module-name="fastdfs-client-java" />
     <orderEntry type="module" module-name="gmall-interface" />
     <orderEntry type="module" module-name="gmall-bean" />
     <orderEntry type="library" name="Maven: tk.mybatis:mapper-spring-boot-starter:1.2.3" level="project" />
